@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/Titulo"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:background="#8800FF"
+            android:gravity="center"
+            android:text="Título"
+            android:textSize="60sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="Introduce el nombre"
+            app:layout_constraintEnd_toStartOf="@+id/Buscar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Titulo" />
+
+        <EditText
+            android:id="@+id/Number"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="Introduce el número"
+            app:layout_constraintEnd_toStartOf="@+id/Borrar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Name" />
+
+        <ImageButton
+            android:id="@+id/Buscar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+
+            app:layout_constraintEnd_toStartOf="@+id/Aniadir"
+            app:layout_constraintTop_toBottomOf="@+id/Titulo"
+            app:srcCompat="@drawable/buscar" />
+
+        <ImageButton
+            android:id="@+id/Aniadir"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Titulo"
+            app:srcCompat="@drawable/anadir" />
+
+        <ImageButton
+            android:id="@+id/Borrar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/tbItem"
+            app:layout_constraintEnd_toStartOf="@+id/Cambiar"
+            app:layout_constraintTop_toBottomOf="@+id/Buscar"
+            app:srcCompat="@drawable/borrar" />
+
+        <ImageButton
+            android:id="@+id/Cambiar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/tbItem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Aniadir"
+            app:srcCompat="@drawable/insertar" />
+
+        <TableLayout
+            android:id="@+id/tbItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:stretchColumns="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Number"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

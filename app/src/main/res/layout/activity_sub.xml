@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TableRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteY="1dp">
+
+    <TextView
+        android:id="@+id/NombreAlmacen"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight=".25"
+        android:gravity="center"
+        android:text="Nombre"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/ID"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:text="Id"
+        android:textAlignment="textEnd"
+        android:textColor="#428336"
+        android:textSize="34sp" />
+
+</TableRow>
